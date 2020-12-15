@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% @friends.each do |friend| %>
+    <% @friend.each do |friend| %>
       <% if friend.user == current_user %>
       <tr>
         <td><%= link_to friend.first_name + ' ' + friend.last_name, friend %></td>       
@@ -33,7 +33,13 @@
 
 <% else %>
 
-<h1>Hello world!</h1>
-This is my first Rails webpage...
-
+<div class="jumbotron">
+  <h1 class="display-4">Welcome!</h1>
+  <p class="lead">This website is designed to make people's lives easier. </p> 
+  <p class="lead">If you don't feel easier, then it's you are not fully into it yet.</p>
+  <p class="lead">Anyways enjoy. :)</p>
+  <hr class="my-4">
+  
+  
+</div>
 <% end %>
